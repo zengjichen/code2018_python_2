@@ -1,3 +1,20 @@
+
+
+'''
+
+
+其中要注意每个initial中元素ini所在的联通分量我们还要去除它里面含有的本身就在initial中的其他元素，
+因为对于这些元素，事实上即使我们删除了ini，也minimize不了它们。
+所以要算一下每个initial里面的元素所在的联通分量里面包含的其他的initial元素的个数，代码中用dup表示
+
+graph长度为N，
+
+find()时间复杂度为O(N), union为O(1)，所以最终时间复杂度为O(len(graph)^2)
+
+空间为O(N
+
+'''
+
 class Solution(object):
     def minMalwareSpread(self, graph, initial):
         """
