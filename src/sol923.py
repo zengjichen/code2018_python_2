@@ -38,4 +38,4 @@ class Solution(object):
                     else:
                         l += 1
 
-                    return res % M
+        return res % M
